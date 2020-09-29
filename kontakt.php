@@ -49,7 +49,7 @@
                 document.myForm.email.focus();
                 return false;
             }
-            
+
             if (document.myForm.email.value.indexOf('@') == -1) {
                 alert("Error!");
                 document.myForm.email.focus();
@@ -113,12 +113,12 @@
             ?>
             <div class="kontakt query">
                 <div class="bg_shadow">
-                    <p><?php echo $obj->name; ?></p>
-                    <p><?php echo $obj->surname; ?></p>
-                    <p><?php echo $obj->email; ?></p>
-                    <p><?php echo $obj->number; ?></p>
-                    <p><?php echo $obj->choice; ?></p>
-                    <p><?php echo $obj->comment; ?></p>
+                    <p>Ime: <?php echo $obj->name; ?></p>
+                    <p>Prezime: <?php echo $obj->surname; ?></p>
+                    <p>E-mail: <?php echo $obj->email; ?></p>
+                    <p>Telefon: <?php echo $obj->number; ?></p>
+                    <p>Slušalice: <?php echo $obj->choice; ?></p>
+                    <p>Komentar: <?php echo $obj->comment; ?></p>
                 </div>
             </div>
         </div>
