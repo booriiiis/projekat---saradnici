@@ -1,15 +1,14 @@
-*{
+* {
     font-family: 'Aldrich';
     color: red;
 }
 
-.kontakt{
+.kontakt {
     display: flex;
     flex-direction: column;
     padding: 0 10% 5% 10%;
     align-items: center;
     border: 1px;
-    
 }
 
 .kontakt.query {
@@ -19,42 +18,35 @@
 
 .bg_shadow {
     padding: 50px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.polja{
+.polja {
     width: 120%;
-
 }
 
-.dugmici{
+.dugmici {
     display: flex;
     flex-direction: row;
 }
 
-.submit{
-  padding-right: 50px;
-  padding-left: 20px;
-  padding-top: 10px;
+.submit {
+    padding-right: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
-.reset{
-  padding-top: 10px;
-  padding-right: 0px;
-
+.reset {
+    padding-top: 10px;
+    padding-right: 0px;
 }
 
-.label{
-  padding-bottom: 5px;
-  padding-top: 5px;
-
+.label {
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
-
-
 
 .mapa {
-        height: 400px;  
-        width: 400px;
-      
-        
-       }
+    height: 400px;
+    width: 400px;
+}

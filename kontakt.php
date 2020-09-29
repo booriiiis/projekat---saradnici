@@ -49,6 +49,7 @@
                 document.myForm.email.focus();
                 return false;
             }
+            
             if (document.myForm.email.value.indexOf('@') == -1) {
                 alert("Error!");
                 document.myForm.email.focus();
@@ -100,27 +101,26 @@
 
             <?php
 
-           $obj->name = $_GET['ime'];
+            $obj->name = $_GET['ime'];
             $obj->surname =  $_GET['prezime'];
             $obj->email =  $_GET['email'];
             $obj->number =  $_GET['telefon'];
             $obj->choice =  $_GET['sell'];
- 
             $obj->comment =  $_GET['comment'];
-            
+
             $json = json_encode($obj);
             file_put_contents('forma.json', $json);
             ?>
-           <div class="kontakt query">
-           <div class="bg_shadow">
-           <p><?php echo $obj->name; ?></p>
-            <p><?php echo $obj->surname; ?></p>
-           <p> <?php echo $obj->email; ?></p>
-           <p> <?php echo $obj->number; ?></p>
-           <p> <?php echo $obj->choice; ?></p>
-           <p> <?php echo $obj->comment; ?></p>
-           </div>
-           </div>
+            <div class="kontakt query">
+                <div class="bg_shadow">
+                    <p><?php echo $obj->name; ?></p>
+                    <p><?php echo $obj->surname; ?></p>
+                    <p><?php echo $obj->email; ?></p>
+                    <p><?php echo $obj->number; ?></p>
+                    <p><?php echo $obj->choice; ?></p>
+                    <p><?php echo $obj->comment; ?></p>
+                </div>
+            </div>
         </div>
 
 
